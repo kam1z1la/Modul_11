@@ -2,8 +2,10 @@ import Task1.Name;
 import Task2.SortName;
 import Task3.StringValue;
 import Task4.OwnRandValue;
+import Task5.Zip;
 
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 import static Task4.OwnRandValue.*;
 
@@ -15,6 +17,7 @@ public class Main {
         list.add("Ivan");
         list.add("Ivanka");
         list.add("Artem");
+        list.add("Zara");
         System.out.println(Name.namesWithUnpairedIndex(list));
         System.out.println();
 
@@ -39,5 +42,10 @@ public class Main {
 
         System.out.println(OwnRandValue.lineaCongruentGenerator(c, a, m));
         System.out.println();
+
+
+        Stream<Integer> array = Stream.of(1,3,4);
+        Stream<Integer> secondArray = Stream.of(2,6,7,8);
+        System.out.println(Zip.zip(array, secondArray));
     }
 }
