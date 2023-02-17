@@ -12,6 +12,6 @@ public class Zip {
         Spliterator<T> splitSecond = second.spliterator();
         List<T> list = new ArrayList<>();
         while (splitFirst.tryAdvance(list::add) && splitSecond.tryAdvance(list::add)) ;
-        return list.stream().toList();
+        return list;
     }
 }
