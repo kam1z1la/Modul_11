@@ -47,5 +47,7 @@ public class Main {
         Stream<Integer> array = Stream.of(1,3,4);
         Stream<Integer> secondArray = Stream.of(2,6,7,8);
         System.out.println(Zip.zip(array, secondArray));
+
+        System.out.println("change");
     }
 }
